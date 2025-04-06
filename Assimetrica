@@ -7,14 +7,12 @@ import java.util.Base64;
 
 public class CryptoAssimetrica {
 
-    // Gera um par de chaves RSA (pública e privada)
     public static KeyPair gerarParDeChaves() throws Exception {
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
-        keyGen.initialize(2048); // Tamanho da chave (recomendado: 2048 ou mais)
+        keyGen.initialize(2048);
         return keyGen.generateKeyPair();
     }
 
-    // Criptografa usando a chave pública
     public static String criptografar(String mensagem, PublicKey chavePublica) throws Exception {
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.ENCRYPT_MODE, chavePublica);
@@ -22,7 +20,6 @@ public class CryptoAssimetrica {
         return Base64.getEncoder().encodeToString(mensagemCriptografada);
     }
 
-    // Descriptografa usando a chave privada
     public static String descriptografar(String mensagemCriptografada, PrivateKey chavePrivada) throws Exception {
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.DECRYPT_MODE, chavePrivada);
@@ -32,7 +29,7 @@ public class CryptoAssimetrica {
     }
 
     public static void main(String[] args) throws Exception {
-        // Gera o par de chaves
+
         KeyPair parDeChaves = gerarParDeChaves();
         PublicKey chavePublica = parDeChaves.getPublic();
         PrivateKey chavePrivada = parDeChaves.getPrivate();
@@ -40,11 +37,9 @@ public class CryptoAssimetrica {
         String mensagem = "Mensagem ultra secreta!";
         System.out.println("Original: " + mensagem);
 
-        // Criptografa com a chave pública
         String criptografada = criptografar(mensagem, chavePublica);
         System.out.println("Criptografada: " + criptografada);
 
-        // Descriptografa com a chave privada
         String descriptografada = descriptografar(criptografada, chavePrivada);
         System.out.println("Descriptografada: " + descriptografada);
     }
