@@ -1,0 +1,17 @@
+1. O firewall e o servidor Web usados pela Linen Planet fornecem serviços de criptografia? Em caso afirmativo, que tipo de proteção estava em vigor?
+Sim, o firewall e o servidor Web da Linen Planet fornecem serviços de criptografia. Conforme descrito no estudo de caso, o navegador de Maris exibiu um ícone de segurança, indicando que a conexão utilizava criptografia. Além disso, o texto afirma que “a criptografia entre seu navegador e o servidor estava agora em vigor”.
+
+O tipo de proteção em vigor é a criptografia em trânsito, mais especificamente por meio do protocolo TLS (Transport Layer Security), que protege os dados transmitidos entre o cliente (navegador) e o servidor Web. Essa proteção impede que terceiros interceptem ou modifiquem os dados enquanto são transmitidos pela internet.
+
+2. Como o acesso ao servidor Web da Linen Planet poderia ser mais seguro?
+O acesso ao servidor Web da Linen Planet poderia ser significativamente mais seguro com a adoção das seguintes práticas:
+
+Autenticação Multifator (MFA): O uso de MFA adiciona uma camada extra de segurança, exigindo não apenas a senha, mas também um segundo fator, como um código enviado ao celular ou um aplicativo autenticador. Mesmo que as credenciais sejam comprometidas, o acesso ainda seria barrado.
+
+Evitar compartilhamento de credenciais em ambientes públicos: A diretora compartilhou seu usuário e senha por telefone em um local público (trem), o que facilitou o roubo das informações por uma ouvinte próxima. Credenciais nunca devem ser compartilhadas por meios inseguros ou em locais expostos.
+
+Utilização de redes privadas virtuais (VPN): O acesso remoto ao sistema da empresa deveria ocorrer apenas por meio de uma VPN, garantindo que os dados trafeguem por um canal criptografado e autenticado.
+
+Restrição de IPs e dispositivos autorizados: Limitar o acesso ao sistema somente a determinados IPs confiáveis ou dispositivos previamente autorizados aumentaria a segurança contra acessos não autorizados.
+
+Monitoramento e alertas de acesso: O sistema poderia emitir alertas automáticos sobre logins suspeitos ou realizados de locais não habituais, permitindo respostas rápidas a possíveis invasões.
