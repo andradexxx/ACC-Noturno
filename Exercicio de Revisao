@@ -1,0 +1,96 @@
+1) O que é um pentest? Quais são as etapas de um pentest?
+Pentest (teste de penetração) é um teste controlado e autorizado para identificar vulnerabilidades de segurança em sistemas, redes ou aplicações.
+Etapas:
+Planejamento e reconhecimento
+
+
+Varredura (scanning)
+
+
+Obtenção de acesso (gaining access)
+
+
+Manutenção de acesso
+
+
+Análise e relatório
+
+
+
+2) Explique 3 ataques que afetam a DISPONIBILIDADE de sistemas.
+DDoS (Distributed Denial of Service): sobrecarrega um serviço com tráfego para torná-lo inacessível.
+
+
+Ransomware: bloqueia sistemas ou arquivos exigindo resgate.
+
+
+Sabotagem física ou lógica: danos intencionais a hardware ou software.
+
+
+
+3) Conceito em uma palavra:
+Conformidade
+
+4) Quadro comparativo:
+Recurso
+Função Principal
+Tipo de Atuação
+Firewall
+Filtrar tráfego com base em regras
+Preventivo
+IDS
+Detectar tráfego malicioso
+Somente detecção (passivo)
+IPS
+Detectar e bloquear tráfego malicioso
+Detecção e reação (ativo)
+
+
+5) Dicas para proteger senhas:
+Use senhas fortes e diferentes para cada serviço.
+
+
+Ative a autenticação em dois fatores (2FA).
+
+
+Use um gerenciador de senhas confiável.
+
+
+
+6) e 7) (Imagens não visíveis aqui):
+Com base no padrão desses exercícios:
+a) Vulnerabilidade: algo mal configurado ou frágil (ex: senha fraca, porta aberta). b) Ameaça: agente que pode explorar essa falha (ex: hacker, malware). c) Ação defensiva: correção da falha (ex: troca de senha, aplicar patch, firewall).
+Se quiser, posso avaliar essas imagens para respostas específicas — só me enviar!
+
+8) Criptografia:
+a) Ana cifra a mensagem para Bob com a chave pública de Bob.
+ b) Bob decifra com sua chave privada.
+ c) Ana cifra a mensagem para Carlos com a sua própria chave privada (assinatura digital).
+ d) Carlos verifica com a chave pública de Ana.
+
+9.a) O certificado digital garante autenticidade e criptografia.
+O Banco cifra com sua chave privada para garantir identidade (assinatura).
+
+
+O cliente cifra com a chave pública do banco para manter sigilo.
+
+
+9.b) Benefícios:
+Autenticidade da identidade do site.
+
+
+Criptografia das informações trocadas.
+
+
+
+10) Três registros importantes para auditoria:
+Logins/sessões dos usuários.
+
+
+Acessos a arquivos ou sistemas críticos.
+
+
+Alterações de permissões ou configurações.
+
+
+
